@@ -1,0 +1,118 @@
+/* Custom Stylesheet */
+
+
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    margin-bottom: -20px !important;
+}
+
+body {
+    /*    background-color: #004060 !important;*/
+}
+
+nav ul a,
+nav .brand-logo {
+    color: #444;
+}
+
+p {
+    line-height: 2rem;
+}
+
+.button-collapse {
+    color: #26a69a;
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+
+#card-styling{
+    min-height: 280px;
+    max-height: 280px;
+    height: 280px;
+}
+
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+    #card-styling{
+    
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+    #card-styling{
+    min-height: 320px;
+    max-height: 320px;
+    height: 320px;
+}
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+#download-button {
+    background-color: #004060 !important;
+}
+
+#page-footer {
+    background-color: #004060 !important;
+}
+
+
+.animte{
+    animation: show;
+}
+.options{
+    position: relative;
+    top: 0;
+    z-index: 99;
+    background-color: red;
+    height: 10px;
+    width: 100%;
+/*        animation: show;*/
+/*    display: none;*/
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@Keyframes show{
+    from{width: 0;}
+    to{width: 300px;
+}
+
